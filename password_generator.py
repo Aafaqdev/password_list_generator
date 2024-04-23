@@ -1,8 +1,6 @@
 import itertools
 import sys
-from colorama import Fore, Style
 
-print(Fore.MAGENTA + "Password Generator" + Style.RESET_ALL)
 def generate_passwords(characters, min_length, max_length):
     passwords = []
     total_combinations = 0
@@ -23,6 +21,17 @@ def generate_passwords(characters, min_length, max_length):
 def print_stylish_message(message):
     print(f"\033[1;31;40m{message}\033[0m")
 
+def display_menu():
+    print_stylish_message("""
+   _____       _                 _      _             
+  / ____|     | |               | |    (_)            
+ | |  __ _   _| |_ _ __ __ _  __| | ___ _ _ __   __ _ 
+ | | |_ | | | | __| '__/ _` |/ _` |/ _ \ | '_ \ / _` |
+ | |__| | |_| | |_| | | (_| | (_| |  __/ | | | | (_| |
+  \_____|\__,_|\__|_|  \__,_|\__,_|\___|_|_| |_|\__, |
+                                                  __/ |
+                                                 |___/ 
+    """)
 
     print("\033[1;31;40m1. \033[0mRandom Password Generator")
     print("\033[1;31;40m2. \033[0mFollow us on Github")
@@ -67,4 +76,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
