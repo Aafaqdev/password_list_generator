@@ -1,6 +1,6 @@
 # Random Password List Generator Tool
 
-This is a Python script that generates password list based on user-defined criteria. Users can specify the minimum and maximum length of the passwords, as well as choose which characters to include (alphabets, numbers, and special characters).
+This is a Python script that generates password list based on user-defined criteria. The list can be generated similiar to rockyou.txt, Users can specify the minimum and maximum length of the passwords, as well as choose which characters to include (alphabets, numbers, and special characters).
 
 ## Usage
 
